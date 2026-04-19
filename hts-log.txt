@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 18 Apr 2026 16:29:24 at https://pacotesecretobrasil.online/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://pacotesecretobrasil.online/ -O1 "C:\My Web Sites\pacote" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:29:35	Error: 	"Not Found" (404) at link https://pages.greatpages.com.br/www.pacotesecreto.online-pacotesecretobrasil/1775074364/css.css (from https://pacotesecretobrasil.online/)
+16:29:35	Error: 	"Not Found" (404) at link https://pages.greatpages.com.br/www.pacotesecreto.online-pacotesecretobrasil/1775074364/js.js (from https://pacotesecretobrasil.online/)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/signals/config/ (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/t (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/e (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/signals/plugins/ (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/schema.org/ (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/t.resolvedLink (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/o (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/signals/iwl.js (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/signals/iwl.js?pixel_id= (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/n.dl (from https://connect.facebook.net/en_US/fbevents.js)
+16:29:42	Error: 	"Not Found" (404) at link https://pacotesecretobrasil.online/n.rl (from https://connect.facebook.net/en_US/fbevents.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 18 seconds : 47 links scanned, 33 files written (32999697 bytes overall) [32358016 bytes received at 1797667 bytes/sec], 1323295 bytes transferred using HTTP compression in 21 files, ratio 23%, 2.4 requests per connection
+(13 errors, 0 warnings, 0 messages)

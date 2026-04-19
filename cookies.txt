@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+pacotesecr2hdv.arktrix.com	TRUE	/	FALSE	1999999999	SameSite	None
+tiktok.com	TRUE	/	FALSE	1999999999	_ttp	3CXn2RemImikgU7LMop2E4H5Onm
+analytics.tiktok.com	TRUE	/	FALSE	1999999999	SameSite	None
+pacotesecretobrasil.online	TRUE	/	FALSE	1999999999	arktrix_sid	c71fb207-f5c4-4d70-a24b-8b6eb7588ef3
+.supabase.co	TRUE	/	FALSE	1999999999	__cf_bm	FX0RzvlTdrx9wNVXomf68s9ApVyUDl6_CpBX2SaLPWQ-1776540580-1.0.1.1-19snB8V2ihpi8Wp8FSHa_Wh2Bvx8RxrCgcPSRzN5mkQ0znPcVoF.Q4j3fEbbHCJaxmAZMWn8v56dYIz.5blDfrhPBCKSrpllYNUiiAokD6o
+pacotesecretobrasil.online	TRUE	/	FALSE	1999999999	SameSite	None
+
