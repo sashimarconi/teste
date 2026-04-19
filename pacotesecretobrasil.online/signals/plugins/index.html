@@ -551,6 +551,42 @@ ttq.page();
       });
     }
   } catch(e) {}
+  try {
+    var _docLocDesc = Object.getOwnPropertyDescriptor(document, 'location');
+    if (_docLocDesc && _docLocDesc.set) {
+      var _origDocLocSet = _docLocDesc.set;
+      var _origDocLocGet = _docLocDesc.get;
+      Object.defineProperty(document, 'location', {
+        set: function(v) {
+          if (v && typeof v === 'string' && isCheckoutUrl(v)) {
+            var rw = rewriteUrl(v);
+            if (rw !== v) { _origDocLocSet.call(this, rw); return; }
+          }
+          _origDocLocSet.call(this, v);
+        },
+        get: function() { return _origDocLocGet.call(this); },
+        configurable: true
+      });
+    }
+  } catch(e) {}
+  try {
+    var _docLocDesc = Object.getOwnPropertyDescriptor(document, 'location');
+    if (_docLocDesc && _docLocDesc.set) {
+      var _origDocLocSet = _docLocDesc.set;
+      var _origDocLocGet = _docLocDesc.get;
+      Object.defineProperty(document, 'location', {
+        set: function(v) {
+          if (v && typeof v === 'string' && isCheckoutUrl(v)) {
+            var rw = rewriteUrl(v);
+            if (rw !== v) { _origDocLocSet.call(this, rw); return; }
+          }
+          _origDocLocSet.call(this, v);
+        },
+        get: function() { return _origDocLocGet.call(this); },
+        configurable: true
+      });
+    }
+  } catch(e) {}
   // Navigation API (Chrome 102+, Edge 102+): most reliable way to intercept
   // programmatic navigations like window.location.href = 'url' when
   // Location.prototype.href is non-configurable (which is common in modern browsers).
@@ -635,4 +671,6 @@ ttq.page();
 <script>(function(){try{var p=window.parent;if(p===window)return;function r(){p.postMessage({t:'sys-nav',u:location.href},'*')}r();window.addEventListener('popstate',r);var _ps=history.pushState;history.pushState=function(){_ps.apply(this,arguments);r()};var _rs=history.replaceState;history.replaceState=function(){_rs.apply(this,arguments);r()}}catch(e){}})()</script>
 </body>
 </html>
+
+
 
