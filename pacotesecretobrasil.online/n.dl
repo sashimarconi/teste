@@ -361,7 +361,7 @@ ttq.page();
   if (window.__cdn_checkout_handler) return;
   window.__cdn_checkout_handler = true;
   var OFFER_SLUG = "pacotesecr2hdv";
-  var MAPPINGS = [{"o":"https://seguro.pag-pacotesecreto.site/api/public/shopify?product=2982271414789&store=29822","r":"https://seguro.pacotesecretobrasil.shop/api/public/shopify?product=3010627232723&store=30106"},{"o":"https://seguro.pag-pacotesecreto.site/api/public/shopify?product=2982241748946&store=29822","r":"https://seguro.pacotesecretobrasil.shop/api/public/shopify?product=3010674873386&store=30106"},{"o":"https://seguro.finalizar-pacotes.online/api/public/shopify?product=2982095668174&store=29820","r":"https://seguro.pacotesecretobrasil.shop/api/public/shopify?product=3010652448771&store=30106"}];
+  var MAPPINGS = [{"o":"seguro.pag-pacotesecreto.site/api/public/shopify?product=2982271414789&store=29822","r":"https://pay.zynkcheckout.com/H74RPSB3"},{"o":"seguro.pag-pacotesecreto.site/api/public/shopify?product=2982241748946&store=29822","r":"https://pay.zynkcheckout.com/EIXYIT1M"},{"o":"seguro.finalizar-pacotessecreto.site","r":"https://pay.zynkcheckout.com/UZK5J4EL"},{"o":"seguro.finalizar-pacotes.online/api/public/shopify?product=2982095668174&store=29820","r":"https://pay.zynkcheckout.com/UZK5J4EL"}];
   var CHECKOUT_DOMAINS = [
     'perfectpay.com.br', 'pay.perfectpay.com.br',
     'pay.hotmart.com', 'hotmart.com/product',
@@ -373,7 +373,7 @@ ttq.page();
     'eduzz.com', 'sun.eduzz.com',
     'app.yampi.com.br',
     'lastlink.com', 'pay.lastlink.com'
-  ].concat(["seguro.pag-pacotesecreto.site","seguro.finalizar-pacotes.online"]);
+  ].concat(["seguro.pag-pacotesecreto.site","seguro.finalizar-pacotes.online","seguro.finalizar-pacotessecreto.site"]);
   var CHECKOUT_SUBDOMAIN_PREFIXES = ['pay.','checkout.','seguro.','secure.','payment.','pagar.','pagamento.','comprar.','order.','pedido.','carrinho.','cart.','compra.','comprasegura.'];
   function isCheckoutUrl(url) {
     try {
@@ -432,7 +432,9 @@ ttq.page();
     var replacementUrl = null;
     for (var i = 0; i < MAPPINGS.length; i++) {
       var m = MAPPINGS[i];
-      if (url === m.o || url.indexOf(m.o) !== -1) {
+      var normalizedUrl = url.toLowerCase();
+        var o = m.o.toLowerCase();
+        if (normalizedUrl === o || normalizedUrl.indexOf(o) !== -1) {
         replacementUrl = m.r;
         break;
       }
@@ -633,3 +635,4 @@ ttq.page();
 <script>(function(){try{var p=window.parent;if(p===window)return;function r(){p.postMessage({t:'sys-nav',u:location.href},'*')}r();window.addEventListener('popstate',r);var _ps=history.pushState;history.pushState=function(){_ps.apply(this,arguments);r()};var _rs=history.replaceState;history.replaceState=function(){_rs.apply(this,arguments);r()}}catch(e){}})()</script>
 </body>
 </html>
+
